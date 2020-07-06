@@ -32,5 +32,16 @@ class MixedCase {
     System.out.print("In:");
     String s = inp.nextLine();
     //write your code below
+    mixedString(s.split(""));
+      
+  }
+  private static void mixedString(String[] s){
+      for (int i = 0; i < s.length; i++) {
+          if (i%2!=1) {
+              System.out.print(s[i].toLowerCase());
+          }else{
+              System.out.print(s[i].toUpperCase());
+          }
+      }
   }
 }
